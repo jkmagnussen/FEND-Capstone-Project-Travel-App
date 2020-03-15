@@ -5,6 +5,7 @@
   "scripts": {
     "test": "jest",
     "start": "npm run client-prod && npm run server-prod",
+    "postinstall": "webpack -p",
     "server-dev": "nodemon src/server/index.js",
     "server-prod": "node src/server/index.js",
     "client-prod": "webpack --config webpack.prod.js",
