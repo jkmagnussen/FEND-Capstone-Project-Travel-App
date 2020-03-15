@@ -13,9 +13,9 @@
 <br>
         <main>
             <section class ="section2">
-                    <p class = "text" style = 'font-size: 50px;'>Your Trip To: </p>
+                    <p class = "text" style = 'font-size: 50px;'>Destination: </p>
                     <input id="input1"
-                           placeholder="Please enter a valid zipcode/ postcode or city"
+                           placeholder="Please enter a valid zipcode or city"
                            type="text">
 
                     <p class = "text" style = 'font-size: 50px;'>Start Date: </p>
@@ -28,27 +28,36 @@
                            placeholder="Input Your Return Date"
                            type="date">
 
-                    <button class = "button" onClick = "Client.formHandler()" type="button">Submit</button> 
-                    <button id = "removeTripButton" class = "button" type="button">Remove Trip</button>
+                    <button class = "button" onClick = "Client.formHandler()" type="button" style=" outline: 0 none;">Submit</button> 
+                    <button id = "removeTripButton" class = "button" type="button" style=" outline: 0 none;">Remove Trip</button>
                     <br><br>
-                    <p><div id="latitude" style = 'color: rgb(180, 178, 30); display: none;'></div></p>
-                    <p><div id="longitude" style = 'color: rgb(180, 178, 30); display: none;'></div></p>
-                    <p>Country Code:<div id="country" style = 'color: rgb(180, 178, 30)'></div></p>
-                    <p><div id="placeName" display: none;'></div></p>
-                    <p>Countdown:<div id="countdown" style = 'color: rgb(180, 178, 30)'></div></p>
-                    <p>Length of Trip:<div id="LoT" style = 'color: rgb(180, 178, 30)'></div></p>
-                    <p>Prospective Weather:<ul id="weather" style = 'color: rgb(180, 178, 30); line-height: 50px; text-align: justify'></ul></p>
-                    <p><div id="image" style = "display: none;"></div></p>
+                    <p><div id="latitude" style = 'color: rgb(255, 255, 255); display: none;'></div></p>
+                    <p><div id="longitude" style = 'color: rgb(228, 227, 166); display: none;'></div></p>
+                    <p >Country Code:<div id="country" style = 'color: rgb(255, 255, 255)'></div></p>
+                    <p style = "display: none;"><div id="placeName" style = "display: none;"></div></p>
+                    <p>Countdown:<div id="countdown" style = 'color: rgb(255, 255, 255)'></div></p>
+                    <p>Length of Trip:<div id="LoT" style = 'color: rgb(255, 255, 255)'></div></p>
+                    <p>Prospective Weather:<br><ul id="weather" style = 'color: rgb(255, 255, 255); line-height: 50px; text-align: justify'></ul></p><br>
+                    <p style = "display: none;"><div id="image" class = "picz"></div></pstyle = "display: none;">
             </section>
+            <br>
+
+            <footer>
+                <div class = "box">
+                  <a href="https://jkmagnussen.com/">
+                    <img class="home" src="src/client/views/home.jpg" alt="home" />
+                  </a>
+                  <a href="https://github.com/jkmagnussen/FEND-Capstone-Project-Travel-App">
+                    <img class="github" src="src/client/views/github.jpg" alt="github" />
+                  </a>
+                  <a href="https://linkedin.com/in/joseph-magnussen/">
+                    <img class="linkedIn" src="/src/client/views/linkedIn.jpg" alt="linkedIn" />            
+                 </a>
+                </div>
+              </footer>
+
         </main>
 
-        <footer role="contentinfo">
-            <pstyle='color: rgb(56, 56, 56); >Copyright © 2019, JKMagnussen. All Rights Reserved | </p>
-        <a href='http://www.linkedin.com/in/joseph-magnussen-478827189'><span style='color: rgb(32, 32, 32);'>LinkedIn</span></a> 
-        | <a href='https://github.com/jkmagnussen'><span style='color: rgb(46, 46, 46);'>Github </span></a>
-        | <a href='https://jkmagnussen.com'><span style='color: rgb(56, 56, 56);'>Homepage </span></a>
-        </footer>
-        
         <script>
             window.addEventListener('load', () => {
                 document.getElementById('removeTripButton').addEventListener('click', () => Client.buttonHandler());

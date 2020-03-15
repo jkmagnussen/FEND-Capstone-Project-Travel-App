@@ -15,9 +15,10 @@ img {
   align-content: center;
   max-height: fit-content;
   display: block;
-  margin: auto;
+  margin: 0 auto;
+  margin-left: 40px;
   object-fit: cover;
-  padding-bottom: 0;
+  padding-bottom: 10;
   border-radius: 15px 15px 15px 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.7), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

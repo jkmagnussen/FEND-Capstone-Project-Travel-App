@@ -6,7 +6,13 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   entry: './src/client/index.js',
-  mode: 'production',
+  output: {
+    libraryTarget: 'var',
+    library: 'Client',
+  },
+  mode: 'development',
+  devtool: 'source-map',
+  stats: 'verbose',
   module: {
     rules: [
       {
@@ -19,10 +25,6 @@ module.exports = {
         use: ['style-loader', 'css-loader', 'sass-loader'],
       },
     ],
-  },
-  output: {
-    libraryTarget: 'var',
-    library: 'Client',
   },
   plugins: [
     new HtmlWebPackPlugin({

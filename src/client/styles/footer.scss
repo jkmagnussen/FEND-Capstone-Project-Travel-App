@@ -1,13 +1,41 @@
 footer {
-  width: 100%;
-  height: 6%;
-  bottom: 0;
-  left: 0;
   position: absolute;
-  background-color: white;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 30px;
-  text-align: center;
-  padding-top: 25px;
-  border-top: 28px;
+  bottom: 0px;
+  display: inline;
+  align-content: center;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.github,
+.linkedIn,
+.home {
+  margin: 0 auto;
+  padding: 30px;
+  width: 58px;
+  height: 58px;
+}
+
+a {
+  margin: 40px;
+}
+
+.linkedIn {
+  background-image: url(/src/client/views/linkedIn.jpg);
+  background-size: cover;
+}
+.github {
+  background-image: url(/src/client/views/github.jpg);
+  background-size: cover;
+}
+
+.home {
+  background-image: url(/src/client/views/home.jpg);
+  background-size: cover;
 }
