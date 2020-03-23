@@ -3,7 +3,7 @@ main {
   top: 150px;
   width: 100%;
   min-height: 100%;
-  display: flex;
+  display: inline;
   background-image: url(/Window2.jpg);
   background-size: cover;
   padding: 100px;
@@ -71,13 +71,10 @@ div {
 #input2 {
   font-size: 18px;
   border-radius: 10px 10px 10px 10px;
-  border: none;
-  outline: none;
 }
 
-input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+#input2.sub-menu li:hover a {
+  display: block;
 }
 
 #input3 {
